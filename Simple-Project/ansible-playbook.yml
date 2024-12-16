@@ -1,6 +1,6 @@
 ---
 - name: "Build, Push, and Run a Docker Container on AlmaLinux"
-  hosts: 129.213.47.42
+  hosts: localhost‎
   become: true
   tasks:
     - name: Ensure Docker is installed
