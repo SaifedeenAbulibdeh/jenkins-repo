@@ -19,10 +19,6 @@
       args:
         chdir: /path/to/your/dockerfile
 
-    - name: Log in to DockerHub
-      command: docker login --username <your_dockerhub_username> --password <your_dockerhub_password>
-      no_log: true
-
     - name: Push image to DockerHub
       command: docker push triple3a/comingsoon-page
 
@@ -31,4 +27,4 @@
       ignore_errors: true
 
     - name: Run container with IP binding
-      command: docker run -d --name web-container -p 129.213.47.42:5000:80 triple3a/comingsoon-page
+      command: docker run -d --name web-container -p 5000:80 triple3a/comingsoon-page
