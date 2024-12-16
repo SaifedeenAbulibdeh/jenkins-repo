@@ -6,10 +6,7 @@
     - name: Build Docker image using the Dockerfile
       command: docker build -t triple3a/comingsoon-page .
 
-    - name: Log in to DockerHub
-      command: docker login -u saifedeenabulibdeh123 -p SSss__20022002
-      no_log: true
-
+   
     - name: Push image to DockerHub
       command: docker push triple3a/comingsoon-page
 
